@@ -1,0 +1,61 @@
+name: Levis_testing
+hyperparameters:
+  global_batch_size: 3
+  window:
+    type: int
+    minval: 3
+    maxval: 12
+  ##########
+  conv1D_a_filter: 128
+  conv1D_a_kernel:
+    type: int
+    minval: 4
+    maxval: 10
+  conv1D_a_dilation:
+    type: int
+    minval: 1
+    maxval: 12
+  conv1D_b_filter: 128
+  conv1D_b_kernel:
+    type: int
+    minval: 4
+    maxval: 10
+  conv1D_b_dilation:
+    type: int
+    minval: 1
+    maxval: 12
+  conv1D_c_filter: 128
+  conv1D_c_kernel:
+    type: int
+    minval: 4
+    maxval: 10
+  conv1D_c_dilation:
+    type: int
+    minval: 1
+    maxval: 12
+  ##########
+  dropout1:
+    type: double
+    minval: 0.01
+    maxval: 0.2
+  lstm1:
+    type: int
+    minval: 32
+    maxval: 256
+  dropout2:
+    type: double
+    minval: 0.01
+    maxval: 0.2
+  lstm2:
+    type: int
+    minval: 32
+    maxval: 256
+records_per_epoch: 92
+searcher:
+  name: adaptive_asha
+  metric: val_loss
+  smaller_is_better: true
+  max_length:
+    epochs: 100
+  max_trials: 3
+entrypoint: model_def:LevisTrial
