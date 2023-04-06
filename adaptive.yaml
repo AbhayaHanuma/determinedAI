@@ -1,10 +1,7 @@
-name: Levis_testing
+name: Apparel_testing
 hyperparameters:
-  global_batch_size: 3
-  window:
-    type: int
-    minval: 3
-    maxval: 12
+  global_batch_size: 9
+  window: 3
   ##########
   conv1D_a_filter: 128
   conv1D_a_kernel:
@@ -57,5 +54,5 @@ searcher:
   smaller_is_better: true
   max_length:
     epochs: 100
-  max_trials: 3
-entrypoint: model_def:LevisTrial
+  max_trials: 2
+entrypoint: model_def:ApparelTrail

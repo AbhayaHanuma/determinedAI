@@ -1,4 +1,4 @@
-name: Levis_testing
+name: Apparel_testing
 hyperparameters:
   global_batch_size: 9
   window: 3
@@ -24,4 +24,6 @@ searcher:
   smaller_is_better: true
   max_length:
     epochs: 10
-entrypoint: model_def:LevisTrial
+entrypoint: model_def:ApparelTrail
+environment:
+  image: "rachanahs/custom_images:latest"

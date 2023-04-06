@@ -1,0 +1,27 @@
+name: Apparel_testing
+hyperparameters:
+  global_batch_size: 9
+  window: 3
+  ##########
+  conv1D_a_filter: 128
+  conv1D_a_kernel: 10
+  conv1D_a_dilation: 12
+  conv1D_b_filter: 128
+  conv1D_b_kernel: 10
+  conv1D_b_dilation: 12
+  conv1D_c_filter: 128
+  conv1D_c_kernel: 10
+  conv1D_c_dilation: 12
+  ##########
+  dropout1: 0.1
+  lstm1: 64
+  dropout2: 0.1
+  lstm2: 64
+records_per_epoch: 93
+searcher:
+  name: single
+  metric: val_loss
+  smaller_is_better: true
+  max_length:
+    epochs: 10
+entrypoint: model_def:ApparelTrail

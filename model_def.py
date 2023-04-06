@@ -14,7 +14,7 @@ from determined.keras import InputData, TFKerasTrial, TFKerasTrialContext
 
 from keras_multi_head import MultiHead
 
-class LevisTrial(TFKerasTrial):
+class ApparelTrail(TFKerasTrial):
     def __init__(self, context: TFKerasTrialContext) -> None:
         self.context = context
         self.scaler_obj = None
@@ -98,6 +98,4 @@ class LevisTrial(TFKerasTrial):
         return test_images, test_labels
 
 if __name__=='__main__':
-    obj = LevisTrial()
-    model = obj.build_model()
-    print(model.summary())
+    pass
