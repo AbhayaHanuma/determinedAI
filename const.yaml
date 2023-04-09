@@ -1,6 +1,6 @@
-name: Apparel_testing
+name: Apparel_testing_preds
 hyperparameters:
-  global_batch_size: 9
+  global_batch_size: 6
   window: 3
   ##########
   conv1D_a_filter: 128

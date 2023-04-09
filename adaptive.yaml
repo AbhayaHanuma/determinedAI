@@ -1,7 +1,10 @@
 name: Apparel_testing
 hyperparameters:
-  global_batch_size: 9
-  window: 3
+  global_batch_size: 6
+  window:
+    type: int
+    minval: 3
+    maxval: 12
   ##########
   conv1D_a_filter: 128
   conv1D_a_kernel:
@@ -34,7 +37,7 @@ hyperparameters:
   dropout1:
     type: double
     minval: 0.01
-    maxval: 0.2
+    maxval: 0.4
   lstm1:
     type: int
     minval: 32
@@ -42,7 +45,7 @@ hyperparameters:
   dropout2:
     type: double
     minval: 0.01
-    maxval: 0.2
+    maxval: 0.4
   lstm2:
     type: int
     minval: 32
@@ -53,6 +56,8 @@ searcher:
   metric: val_loss
   smaller_is_better: true
   max_length:
-    epochs: 100
-  max_trials: 2
+    epochs: 1000
+  max_trials: 10
 entrypoint: model_def:ApparelTrail
+environment:
+  image: "rachanahs/custom_images:latest"

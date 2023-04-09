@@ -88,7 +88,7 @@ class ApparelTrail(TFKerasTrial):
         return model
     
     def build_training_data_loader(self) -> InputData:
-        train_images, train_labels, scaler, data = fetch.load_training_data(LAG=1,window=self.context.get_hparam('window'))
+        train_images, train_labels, scaler, data, _ = fetch.load_training_data(LAG=1,window=self.context.get_hparam('window'))
         self.scaler_obj = scaler
         self.data = data
         return train_images, train_labels
