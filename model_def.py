@@ -1,11 +1,3 @@
-"""
-This example shows how to use Determined to implement an image
-classification model for the Fashion-MNIST dataset using tf.keras.
-Based on: https://www.tensorflow.org/tutorials/keras/classification.
-After about 5 training epochs, accuracy should be around > 85%.
-This mimics theoriginal implementation. Continue training or increase
-the number of epochs to increase accuracy.
-"""
 import fetch
 import tensorflow as tf
 from tensorflow import keras
@@ -82,7 +74,6 @@ class ApparelTrail(TFKerasTrial):
 
         model.compile(
             optimizer=optimizer,
-            # metrics=['accuracy'],
             loss='mean_absolute_error',)
         
         return model
@@ -96,6 +87,3 @@ class ApparelTrail(TFKerasTrial):
     def build_validation_data_loader(self) -> InputData:
         test_images, test_labels = fetch.load_validation_data(data=self.data,scaler=self.scaler_obj,window=self.context.get_hparam('window'))
         return test_images, test_labels
-
-if __name__=='__main__':
-    pass

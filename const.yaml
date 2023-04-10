@@ -1,4 +1,4 @@
-name: Apparel_testing_preds
+name: ApparelSales
 hyperparameters:
   global_batch_size: 6
   window: 3
@@ -23,7 +23,7 @@ searcher:
   metric: val_loss
   smaller_is_better: true
   max_length:
-    epochs: 10
+    epochs: 100
 entrypoint: model_def:ApparelTrail
 environment:
   image: "rachanahs/custom_images:latest"

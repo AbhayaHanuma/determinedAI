@@ -34,13 +34,3 @@ def load_validation_data(data,scaler,window=3,val=18):
     test_norm = scaler.transform(test)
     x_test, y_test, last_win_data = window_data(data=pd.DataFrame(test_norm), window=window)
     return x_test, y_test
-
-if __name__=='__main__':
-    x_train, y_train, scaler, data = load_training_data(LAG=1)
-    x_test, y_test = load_validation_data(data,scaler)
-
-    print(f'DATA: {data}')
-    print(f'x_train : {x_train} ====== x_train shape: {x_train.shape}')
-    print(f'y_train : {y_train} ====== y_train shape: {y_train.shape}')
-    print(f'x_test : {x_test} ====== x_test shape: {x_test.shape}')
-    print(f'y_test : {y_test} ====== y_test shape: {y_test.shape}')

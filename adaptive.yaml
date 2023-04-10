@@ -1,10 +1,11 @@
-name: Apparel_testing
+name: ApparelSales_win12
 hyperparameters:
   global_batch_size: 6
-  window:
-    type: int
-    minval: 3
-    maxval: 12
+  window: 12
+  # window:
+  #   type: int
+  #   minval: 3
+  #   maxval: 12
   ##########
   conv1D_a_filter: 128
   conv1D_a_kernel:

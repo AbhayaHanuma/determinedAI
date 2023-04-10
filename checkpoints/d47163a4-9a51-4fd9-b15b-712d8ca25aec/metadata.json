@@ -1,6 +1,0 @@
-{
-  "determined_version": "0.21.0",
-  "steps_completed": 15333,
-  "framework": "tensorflow-2.8.3",
-  "format": "saved_weights"
-}
