@@ -34,6 +34,8 @@ det -m <master host:port> experiment create -f adaptive.yaml .
 9. Change the `window` parameter in `const.yaml` and `adaptive.yaml` to run for different window sizes.
 10. Once the experiment is done, the metrics can be seen in the Determined AI WebUI on `<master host:port>`.
 11. The metric defined is loss, and it can be seen how the loss is changing with an increase in batches.
+
 ![Loss changing with increasing batches](/artifacts/loss.png)
+
 12. Once the best trial is identified, load the model from that particular checkpoint to get the final predictions for test data. This can be done using `get_predictions.py`.
 13. The predicted values can be saved to a CSV file for further analysis.
