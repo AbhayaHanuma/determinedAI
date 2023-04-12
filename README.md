@@ -39,3 +39,13 @@ det -m <master host:port> experiment create -f adaptive.yaml .
 
 12. Once the best trial is identified, load the model from that particular checkpoint to get the final predictions for test data. This can be done using `get_predictions.py`.
 13. The predicted values can be saved to a CSV file for further analysis.
+
+Sure, here's a possible final section:
+
+## Final result
+
+After running experiments on the dataset and trying different hyperparameters, we obtained the following accuracies for different window sizes:
+
+![Window accuracies](/images.acc.png)
+
+Overall, we achieved good results for predicting sales using our custom architecture and the determined AI platform. However, we acknowledge that there is still room for improvement and further experiments can be done to improve the model's accuracy.
