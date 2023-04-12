@@ -44,8 +44,11 @@ Sure, here's a possible final section:
 
 ## Final result
 
-After running experiments on the dataset and trying different hyperparameters, we obtained the following accuracies for different window sizes:
+The model was trained for different window sizes ranging from 3 to 12 months. After running the experiments for each window size, the following accuracies were obtained:
 
 ![Window accuracies](/images/acc.png)
 
-Best accuracy was observed at `window: 6`. Overall, we achieved good results for predicting sales using our custom architecture and the determined AI platform. However, we acknowledge that there is still room for improvement and further experiments can be done to improve the model's accuracy.
+From the above image, it can be seen that the best accuracy was obtained with a window size of 6 months, which had an accuracy of 90.08%
+This suggests that our model is more accurate in predicting sales for a 6-month window compared to other window sizes.
+
+Overall, we achieved good results for predicting sales using our custom architecture and the determined AI platform. However, we acknowledge that there is still room for improvement and further experiments can be done to improve the model's accuracy.
