@@ -48,4 +48,4 @@ After running experiments on the dataset and trying different hyperparameters, w
 
 ![Window accuracies](/images/acc.png)
 
-Overall, we achieved good results for predicting sales using our custom architecture and the determined AI platform. However, we acknowledge that there is still room for improvement and further experiments can be done to improve the model's accuracy.
+Best accuracy was observed at `window: 6`. Overall, we achieved good results for predicting sales using our custom architecture and the determined AI platform. However, we acknowledge that there is still room for improvement and further experiments can be done to improve the model's accuracy.
