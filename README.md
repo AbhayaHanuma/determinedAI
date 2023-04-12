@@ -46,6 +46,6 @@ Sure, here's a possible final section:
 
 After running experiments on the dataset and trying different hyperparameters, we obtained the following accuracies for different window sizes:
 
-![Window accuracies](/images.acc.png)
+![Window accuracies](/images/acc.png)
 
 Overall, we achieved good results for predicting sales using our custom architecture and the determined AI platform. However, we acknowledge that there is still room for improvement and further experiments can be done to improve the model's accuracy.
