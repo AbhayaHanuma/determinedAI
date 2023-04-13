@@ -23,7 +23,7 @@ searcher:
   metric: val_loss
   smaller_is_better: true
   max_length:
-    epochs: 100
+    epochs: 1000
 entrypoint: model_def:ApparelTrail
 environment:
   image: "rachanahs/custom_images:latest"
